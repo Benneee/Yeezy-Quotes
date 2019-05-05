@@ -8,7 +8,7 @@ function getQuotes() {
   // xhr.open('GET', 'file.txt', true);
 
   xhr.onload = function() {
-    console.log('ReadyState', xhr.readyState);
+//     console.log('ReadyState', xhr.readyState);
     if (this.status === 200) {
       // We parse the response so we can get access to the nested quote
       const quote = JSON.parse(this.responseText);
